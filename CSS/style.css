@@ -65,8 +65,9 @@ div.navbar{
     overflow: hidden;
     background-image: url(./../hero\ img.jpg)  ;
     background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center center;
+    background-size:cover;
+    background-position: center center ;
+    background-attachment: fixed;
     
 }
 
@@ -74,7 +75,10 @@ div.navbar{
 .cont{
     text-align: center ;
     padding: 250px 0;
+    width: 100%;
+    height: 100vh;
     background-color: rgba(0, 0, 0, 0.5);
+
     
 }
 
@@ -839,7 +843,9 @@ form button{
         background-color: #ff305b;
         padding: 12px;
         border: none;
-        margin: 0 40px 50px ;
+        margin: auto;
+        justify-content: center;
+        align-items: center;
         text-align: center;
     
     }
@@ -865,21 +871,35 @@ form button{
     /* *******************  section 3 ********************** */
 
     .sec3 .kont{
+        /* background-color: #09C; */
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         text-align: center;
+        margin: 0;
     }
 
     .sec3 .kont>.item{
-        width: 100%;
+        width:  100% ;
         margin-top: 10px;
     }
 
     /* ******************* section 4 ************** */
-  
+    .sec4 .menu{
+        width: 100%;
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: center;
+
+    }
+    .sec4 .menu a{
+
+        text-decoration: none;
+        margin: 10px;
+        color: #000;
+     }
     .kont2 .goods{
-        /* margin-left: 12px; */
+        
         width: 100%;
         float: left;
         box-sizing: border-box;
@@ -901,12 +921,22 @@ form button{
     }
 
     /* *************** section 6 ***************** */
-    .kont11 .kont99{
-        width: 100%;
+    .sec6>#blog{
+        background-color: #333333;
+    }
+    .kont11{
+        width: 90%;
         text-align: center;
     }
-  /* ********************** section 7 **************** */
 
+    .kont99{
+        width: 100%;
+    }
+  /* ********************** section 7 **************** */
+ .kont5{
+  width: 100% ;
+ 
+}
   .sec7 .kont5{
     display: flex;
     flex-direction: column;

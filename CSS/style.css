@@ -1,0 +1,957 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+scroll-behavior: smooth;    
+scroll-padding: 70px;
+}
+.clear-fix{
+    clear: both;
+}
+
+
+/* ******************* navbar***************** */
+
+div.navbar{
+    background-color: rgb(14, 14, 14 );
+    position: fixed;
+    z-index: 999999999;
+    top: 0;
+    right: 0;
+    left: 0;
+    }
+
+.navbar .container{
+    width: 85%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+    padding: 15px ;
+}
+
+.container a:hover{
+    color: #ff305b;
+}
+
+.container a{
+    margin: 10px;
+    text-decoration: none;
+    font-size: 1.2em;
+    font-weight: 100;
+    vertical-align: middle;
+    color: white;
+    cursor: pointer;
+ 
+
+}
+
+.container>a{
+    color: #ff305b;
+}
+
+.container #check , .checkbtn{
+    display: none;
+}
+
+/* ********  section 1 ********* */
+/* ****************************** */
+
+
+.sec1{
+    height: 100vh;
+    overflow: hidden;
+    background-image: url(./../hero\ img.jpg)  ;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    
+}
+
+
+.cont{
+    text-align: center ;
+    padding: 250px 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    
+}
+
+.sec1 h2{
+    color: white;
+    font-size: 32px;
+}
+
+.sec1 span{
+    color: #ff305b ;
+    font-size: 1.8em;
+    font-weight: 800;
+}
+
+.sec1 p{
+    color: white;
+    font-size: 1.5em;
+}
+
+
+/* ********  section 2 ********* */
+
+div.sec2{
+    padding-top: 120px;
+    display: flex;
+    justify-content: center; 
+    overflow: hidden;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+   
+}
+
+.profile img{
+    margin: 50px 0 0 0;
+}
+
+div.profile {
+    width: 30%;
+    float: left;
+  position: relative;
+
+}
+
+.layer{
+    width: 350px;
+    height: 430px;
+    border: solid 7px #555555;
+    position: absolute;
+    top: 30px ;
+    left: -20px;
+    z-index: -3;
+}
+
+div.about{
+    width: 45%;
+    float: left;
+    margin-left: 30px;
+    margin-right: 0px;
+    position: relative;
+
+    
+}
+
+.about h2{
+    font-size: 2.1em;
+    font-weight: 800;
+    margin:0 30px 15PX   ;
+
+}
+
+.about h2::after{
+    content:"";
+    width: 5px;
+    height: 25px;
+    background-color :#ff305b;
+    position: absolute;
+    top: 5px;
+    left: 15px;
+
+}
+.about p{
+    font-size: 1.2em;
+    font-weight: 100;
+    padding-bottom: 25px;
+    border-bottom: dashed 1px #100101;
+
+}
+
+.about table{
+    margin: 20px 0;
+    width: 80%; 
+    height: 40px; 
+    font-size: 1.2em; 
+}
+
+
+
+.about th, td {
+    padding: 8px; 
+  }
+
+.about button{
+    width: 150px;
+    font-size: 1.2em;
+    background-color: #ff305b;
+    padding: 12px;
+    border: none;
+    margin-bottom: 50px;
+
+}
+
+
+.btn:hover{
+    background-color:#f32525;
+}
+
+.btn a{
+    color: white;
+    text-decoration: none;
+}
+
+
+
+/* *************  section3 **************** */
+/* ***************************************** */
+
+
+
+div.sec3{
+    padding-top: 20px;
+  
+    overflow: auto;
+    background-color: #F1F1F1;
+
+
+}
+
+.head h2{
+    text-align: center;
+    padding: 50px;
+    margin: 50px 0;
+    font-size: 2.3em;
+    position: relative;
+}
+
+
+
+.head h2:before {
+    content: "";
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    border-color: #ff305b;
+    border-style: solid;
+    border-width: 1px 0;
+    bottom: 0;
+    padding: 4px 0 5px;
+    width: 70px;
+}
+
+
+.head h2::after{
+    content: "";
+    left: 0;
+    margin: 5px auto ;
+    position: absolute;
+    right: 0;  
+    border-color: #ff305b;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    bottom: 0;
+    padding: 4px 0 5px;
+    width: 140px; 
+}
+
+div.kont{
+    display: flex;
+    justify-content: space-between;
+    padding:10px 60px;
+    margin:  50px;
+    text-align: center;
+}
+
+    
+
+
+
+.item1{
+    width: 24%;
+    float: left;
+}
+
+.item1:hover{
+    background-color: white;
+}
+
+.item2{
+    width: 27%;
+    float: left;
+}
+
+.item2:hover{
+    background-color: white;
+}
+
+
+.item3{
+    width: 25%;
+    float: left;
+}
+
+.item3:hover{
+    background-color: white;
+}
+
+
+.item4{
+    width: 24%;
+    float: left;
+}
+
+.item4:hover{
+    background-color: white;
+}
+
+.kont p{
+line-height: 25px;
+font-size: 1.1em;
+margin-bottom: 30px;
+}
+
+.kont h3{
+    font-size: 1.3em;
+    margin: 10px;
+}
+
+
+
+/* ************************* section 4 *************************** */
+ /* *********************************************************** */
+
+
+div.sec4{
+
+    padding: 50px 0;
+}
+
+ .port{
+    text-align: center;
+    font-size: 1.8em;
+    font-weight: 800;
+    padding: 50px;
+    position: relative;
+ }
+
+ .port h2::before {
+    content: "";
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    border-color: #ff305b;
+    border-style: solid;
+    border-width: 1px 0;
+    bottom: 0;
+    padding: 4px 0 5px;
+    width: 70px;
+}
+
+
+.port h2::after{
+    content: "";
+    left: 0;
+    margin: 5px auto ;
+    position: absolute;
+    right: 0;  
+    border-color: #ff305b;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    bottom: 0;
+    padding: 4px 0 5px;
+    width: 140px; 
+}
+
+ .menu{
+    text-align: center;
+    margin: 20px 0;
+    
+ }
+
+ .menu a{
+
+    text-decoration: none;
+    margin: 15px;
+    color: #000;
+ }
+
+
+.kont2{
+   
+    width: 85%;
+    margin: auto;
+
+    
+}
+
+.goods{
+    width: 33.33%;
+    float: left;
+    margin: auto;
+    padding: 15px;
+    box-sizing: border-box;
+
+}
+
+
+
+.goods img{
+    width: 100%;
+}
+
+.kont2:hover .goods{
+color: rgb(201, 56, 56);
+}
+
+/* *************************** section 5 ************************ */
+/* *************************************************************** */
+
+div.sec5{
+    padding: 150px 0;
+    overflow: auto;
+    background-color: #F1F1F1;
+
+}
+
+
+.kont3{
+    width: 80%;
+    margin:  auto;
+    text-align: center;
+    font-size: 1.7em;
+    font-weight: 800;
+
+}
+
+i{
+    color: #f32525;
+    margin-bottom: 20px;
+    font-size: 32px;
+}
+
+.kont3 span{
+    font-size: 18px;
+    font-weight: 400;
+}
+.sec5 #one{
+    float: left;
+    width: 25%;
+
+}
+.sec5 #two{
+   
+    float: left;
+    width: 25%;
+
+
+}
+.sec5 #three{
+    float: left;
+    width: 25%;
+
+
+}
+.sec5 #four{
+    float: left ;
+    width: 25%;
+
+
+}
+
+
+
+
+
+
+/* **************************** section 6************************** */
+/* **************************************************************** */
+
+.sec6 h2{
+    padding: 120px 0 40px 0px;
+    text-align: center;
+    position: relative;
+}
+
+.sec6 h2:before {
+    content: "";
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    border-color: #ff305b;
+    border-style: solid;
+    border-width: 1px 0;
+    bottom: 0;
+    padding: 4px 0 5px;
+    width: 70px;
+}
+
+
+ .sec6 h2::after{
+    content: "";
+    left: 0;
+    margin: 5px auto ;
+    position: absolute;
+    right: 0;  
+    border-color: #ff305b;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    bottom: 0;
+    padding: 4px 0 5px;
+    width: 140px; 
+}
+
+.kont11{
+    width: 60%;
+    background-color: #f1f1f1;
+    margin: 40px auto 120px;
+    
+}
+
+.kont99{
+    float: left;
+    width: 70%;
+    margin: 20px auto;
+    font-size: 20px;
+    z-index: -9;
+    
+}
+
+.dude{
+    float: left;
+    margin: 30px;
+    position: relative;  
+    z-index: 999999;
+}
+
+
+.dude img{
+    border-radius: 50%;
+    width: 80%;
+    position: relative;
+    z-index: 999999;
+}
+    .dude::after {
+        border-color: #ff305b rgba(0, 0, 0, 0) rgba(0, 0, 0, 0);
+        border-image: none;
+        border-style: solid;
+        border-width: 120px;
+        content: "";
+        height: 72px;
+        left: -190px;
+        position: absolute;
+        top: -220px;
+        left: -180px;
+        rotate: 135deg;
+        width: 0px;
+    }
+
+
+/* ************************************* section 7 **************** */
+/* **************************************************************** */
+
+
+.sec7{
+    background-color: #f1f1f1;
+}
+
+.kont5{
+    width: 80% ;
+    margin: auto;
+    padding: 40px;
+    overflow: auto;
+}
+
+.video{
+    padding: 15px;
+    box-sizing:border-box;
+    width:33.333% ;
+    float: left;
+}
+
+.video img{
+    width: 100%;
+}
+
+iframe{
+    /* max-height: 155px;
+    max-width: 276px; */
+
+    width: 100%;
+    height: 100%;
+
+}
+
+
+h2#h2{
+    padding: 50px;
+    text-align: center;
+    position: relative;
+}
+
+h2#h2:before {
+    content: "";
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    border-color: #ff305b;
+    border-style: solid;
+    border-width: 1px 0;
+    bottom: 0;
+    padding: 4px 0 5px;
+    width: 70px;
+}
+
+
+ h2#h2::after{
+    content: "";
+    left: 0;
+    margin: 5px auto ;
+    position: absolute;
+    right: 0;  
+    border-color: #ff305b;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    bottom: 0;
+    padding: 4px 0 5px;
+    width: 140px; 
+}
+
+.sec7 h2 , p , h4{
+    padding: 5px 20px ;
+    line-height: 1.5;
+
+}
+
+
+
+.inner{
+    background-color: #fff;
+    width: 100%;
+    height: 100%;
+}
+
+
+/* ******************************** section 8 *************** */
+/* ********************************************************** */
+
+
+form{
+    width: 60%;
+    margin: auto;
+    padding: 50px;
+}
+
+.sec8 h2{
+    text-align: center;
+    padding: 50px;
+    margin: 30px;
+    position: relative ;
+}
+
+.sec8 h2:before {
+    content: "";
+    left: 0;
+    margin: 0 auto;
+    position: absolute;
+    right: 0;
+    border-color: #ff305b;
+    border-style: solid;
+    border-width: 1px 0;
+    bottom: 0;
+    padding: 4px 0 5px;
+    width: 70px;
+}
+
+
+.sec8 h2::after{
+    content: "";
+    left: 0;
+    margin: 5px auto ;
+    position: absolute;
+    right: 0;  
+    border-color: #ff305b;
+    border-style: solid;
+    border-width: 0 0 1px 0;
+    bottom: 0;
+    padding: 4px 0 5px;
+    width: 140px; 
+}
+
+.name input{
+    float: left;
+    width: 47%;
+    margin: 10px;
+    height: 40px;
+}
+
+.email input{
+    float: right;
+    width: 47%;
+    margin: 10px 0 0 0;
+    height: 40px;
+}
+
+.sub{
+    margin: auto;
+}
+
+.sub input{
+    width: 99%;
+    height: 40px;
+    margin:  0 10px 20px ;
+}
+
+
+#aa{
+    width: 99%;
+    height: 150px;
+    margin-left: 10px;
+}
+
+form button{
+    /* width: 260px; */
+    font-size: 1em;
+    font-weight: 300;
+    padding: 10px;
+    margin: 15px 10px;
+    color: #fff;
+    background-color: #ff305b;
+    border: none;
+}
+
+
+/* ************* section 9*************** */
+/* ************************************* */
+
+
+
+
+.sec9{
+    padding-top: 30px;
+    background-color:#333333;
+    overflow: auto;
+
+}
+
+.social{
+    width: 45%;
+    margin: 50px auto 10px; 
+
+}
+   
+.sec9 p{
+    text-align: center;
+    font-size: 20px;
+    color: #fff;
+    padding-bottom: 50px;
+}
+
+
+.sec9 span{
+    color: #f32525;
+}
+
+.sec9 i{
+    background-color: #09C;
+    margin:  0 50px;
+
+    display: inline-block;
+    color: #fff;
+    border-radius: 50%;
+    font-size: 24px;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ********************* Media Query ***************** */
+
+@media screen  and (max-width:788px) {
+
+    .container>.checkbtn{
+        display: block;
+        position: fixed;
+        right: 30px;
+        cursor: pointer;
+    
+        
+    }
+    .container>a {
+        font-size: 2rem;
+    }
+
+      .nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        line-height: 35px;
+        position: fixed;
+        width:100%;
+        right: 100%;
+        top :65px;
+        height: 100vh;
+        background-color: #09C;
+        z-index: 99999999;
+    }
+
+    #check:checked ~.nav{
+        right: 00% !important;
+       
+    }
+
+   
+
+    /* **************** section 2 ****************** */
+
+    div.sec2{
+        padding-top: 120px;
+        display: flex;
+        flex-direction: column;
+        justify-content: center; 
+        align-items: center;
+        overflow: auto;
+        padding-bottom: 50px;
+        margin-bottom: 50px;
+        overflow: hidden;
+       
+    }
+
+    .sec2 .about{
+        width: 100%;
+    }
+  .sec2  .about table{
+     
+        width: 100%; 
+        font-size: 1.2em; 
+        
+    }
+    .about button{
+        width: 150px;
+        font-size: 1.2em;
+        background-color: #ff305b;
+        padding: 12px;
+        border: none;
+        margin: 0 40px 50px ;
+        text-align: center;
+    
+    }
+
+    .sec2 .profile {
+      width: 100% ;
+      position: relative;
+      margin-bottom: 30px;
+      text-align: center;
+    
+    }
+
+    .profile .layer{
+        width: 350px;
+        height: 430px;
+        border: solid 7px #555555;
+        position: absolute;
+        top: 30px ;
+        left: 35px;
+        z-index: -3;
+    }
+
+    /* *******************  section 3 ********************** */
+
+    .sec3 .kont{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+    }
+
+    .sec3 .kont>.item{
+        width: 100%;
+        margin-top: 10px;
+    }
+
+    /* ******************* section 4 ************** */
+  
+    .kont2 .goods{
+        /* margin-left: 12px; */
+        width: 100%;
+        float: left;
+        box-sizing: border-box;
+    
+    }
+
+    /* **************** section 5 ***************** */
+    
+    .sec5 .kont3 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .kont3>.info{
+        width: 100% !important;
+        margin: 20px 0 !important ;
+    }
+
+    /* *************** section 6 ***************** */
+    .kont11 .kont99{
+        width: 100%;
+        text-align: center;
+    }
+  /* ********************** section 7 **************** */
+
+  .sec7 .kont5{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+  }
+  .sec7 .kont5>.video{
+    width: 100%;
+    overflow: hidden;
+
+  }
+
+  /* ************** section 8 ************ */
+
+  .sec8 form{
+    width: 100%;
+  }
+  .name input , .email input , .sub input  {
+    display: block;
+    width: 100%;
+    margin: 10px;
+    height: 40px;
+}
+
+.email input{
+    margin-right: -10px !important;
+}
+
+
+/* *********** section 9 ************** */
+.sec9> .social{
+    margin: 0 0 0 0 !important;
+    width: 100% ;
+    display: flex;
+    justify-content:space-between;
+    overflow: hidden;
+}
+
+.social>i{
+    margin: 0 30px;
+}
+   
+}
+
+
+
+    

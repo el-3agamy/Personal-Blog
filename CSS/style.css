@@ -815,11 +815,10 @@ form button{
 
     .sec2 .about{
         width: 100%;
+        padding: 0 20px 0 0;
     }
 
-    .about th, td {
-        padding: 9px 0 ; 
-      }
+    
   .sec2  .about table{
      
         width: 100%; 
@@ -828,9 +827,7 @@ form button{
         margin: 20px 0;
         
     }
-    .about th, td {
-        padding: 9px 0 ; 
-      }
+   
     .about button{
         width: 120px;
         font-size: 1em;
@@ -854,18 +851,18 @@ form button{
 
     .profile .layer{
         display: none;
-        width: 300px;
+        /* width: 300px;
         height: 375px;
         border: solid 7px #555555;
         position: absolute;
         top: 25px ;
         left: 25px;
-        z-index: -3;
+        z-index: -3; */
     }
 
     .profile>img{
         width: 80%;
-        margin-left: 15px;
+        /* margin-left: 15px; */
     }   
 
     /* *******************  section 3 ********************** */

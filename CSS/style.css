@@ -827,6 +827,10 @@ form button{
         margin: 20px 0;
         
     }
+
+    .about th, td {
+        padding: 8px 0 ; 
+      }
    
     .about button{
         width: 120px;
